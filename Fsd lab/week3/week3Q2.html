@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Example</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Internal CSS -->
+    <style>
+        /* Element Selector */
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+
+        /* Class Selector */
+        .internal-style {
+            font-size: 18px;
+            color: green;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        /* ID Selector */
+        #unique-element {
+            font-weight: bold;
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Inline Style -->
+    <h1 style="color: red; font-size: 24px;">This is a Heading with Inline Style</h1>
+
+    <!-- Internal Style (Class Selector) -->
+    <p class="internal-style">This paragraph is styled using internal CSS.</p>
+
+    <!-- External Style (Applied from styles.css) -->
+    <p class="external-style">This paragraph is styled using an external CSS file.</p>
+
+    <!-- ID Selector Example -->
+    <p id="unique-element">This paragraph has a unique ID style.</p>
+
+</body>
+</html>

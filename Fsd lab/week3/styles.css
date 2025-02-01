@@ -1,0 +1,22 @@
+/* External CSS Styles */
+
+/* Class Selector */
+.external-style {
+    font-size: 20px;
+    color: darkblue;
+    background-color: lightyellow;
+    padding: 15px;
+    border: 2px solid black;
+}
+
+/* Universal Selector */
+* {
+    font-family: Arial, sans-serif;
+}
+
+/* Body Selector */
+body {
+    background-color: #f8f9fa;
+    margin: 20px;
+}
+
