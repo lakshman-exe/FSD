@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Combinators</title>
+	<style>
+		div p{                /* Descendent Selector */
+			background-color: yellow;
+		}
+		body{
+			text-align: center;
+		}
+		section>p{                    /* Child Combinator */
+			background-color: blue;
+		}
+		article+p{
+			background-color: seagreen; /*Adjacent/NextSibling Combinator */
+		}
+		section~h3{
+			background-color: violet;   /* General Sibling Selector */
+			color: white;
+		}
+	</style>
+</head>
+<body>
+    <h1>24505A0502</h1>
+	<h2> Descendant combinator</h2>
+	<div>
+		<p>This is child 1</p>
+		<p>This is child 2</p>
+		<div>
+			<p> This is grandchild</p>
+		</div>
+	</div>
+	<p>This is not a child</p>
+
+	<h2> Child Combinator</h2>
+	<section>
+		<p> This is first child</p>
+		<p> This is second child</p>
+		<div>
+			<p>This is not its child</p>
+		</div>
+		<p> This is third child</p>
+	</section>
+
+	<h2> Adjacent Sibling Combinator</h2>
+	<article>
+		<p> This is sibling 1</p>
+		<p> This is sibling 2</p>
+	</article>
+	<p> This is adjacent or next sibling 1</p>
+	<p> This is adjacent or next sibling 1</p>
+
+	<h2> General sibling Combinators</h2>
+	<section>
+		<h3> This is sibling 1</h3>
+	</section>
+	<h3> This is General Sibling 1</h3>
+	<h3> This is General Sibling 2</h3>
+
+
+
+</body>
+</html>
